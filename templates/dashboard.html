@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1 style="text-align: center;">Farm Details</h1>
+<div align="center";>
+    <H2>{{crop}} Plantation </H2>
+    <table>
+        <tr>
+            <td>
+                Area : {{Area}} Squre Metres
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Crop Start Month : {{start_date}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Irrigation Today : {{runtime}} Liters
+            </td>
+        </tr>
+    </table>
+</div>
+<h2><a href="{% url 'index' %}">Update Details</a></h2>
+{% endblock %}

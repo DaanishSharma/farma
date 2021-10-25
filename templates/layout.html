@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Irrigation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/irrigation/">Irrigation Assistant</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/irrigation/">Home</a></li>
+            <li><a href="/irrigation/dashboard">Dashboard</a></li>
+            <li><a href="/users/login">login</a></li>
+            <li><a href="/users/logout">logout</a></li>
+            <li><a href="/users/register">Register</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    <h1>Irrigation calculator</h1>
+    <p>The Irrigation Calculator provides broad guidance for water requirements of commercial crops produced in Punjab.
+        By using average weather data from the past 3 years and dialy weather data to calculate ‘effective evaporation
+        on monthly and daily basis ’.</p>
+    <p>allowance should be made in case of Pest, Fungal infections and other diseases.</p>
+    {% block body %}
+    {% endblock %}
+</body>
+<h2>See Also</h2>
+<ul>
+    <li>
+        <a href="http://www.fao.org/3/s2022e/s2022e08.htm#TopOfPage">Irrigation Calcualtion Paper By F.A.O</a>
+    </li>
+    <li>
+        <a href="https://www.digital-village.co.in/">digital-village initiaive by TIET,Patiala and TAU,Tel Aviv
+            Israel</a>
+    </li>
+</ul>
+
+</html>
